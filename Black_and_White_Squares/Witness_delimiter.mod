@@ -6,8 +6,6 @@ range SmRows =1..Side-1;
 int BigNumb = Side*Side;
 
 int Exit = ...;
-// Get the supply (positive) and demand (negative)
-// at each node
 
 int Entries[SmRows][SmRows] = ...;
 
