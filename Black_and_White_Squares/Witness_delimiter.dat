@@ -1,29 +1,14 @@
-/*********************************************
- * OPL 20.1.0.0 Data
- * Author: anarchturandot
- * Creation Date: Feb 26, 2022 at 4:31:21 PM
- *********************************************/
-
- Side = 5;
- Exit = 3;
+ Side = 5; //On how large n*n square can we move our line (this means the colored squares are in a (n-1)*(n-1) square).
+ Exit = 3; //The index of the exit node at the top.
  
+ // 0 means there is no color
+ // 1 means white
+ // 2 means black
  Entries = [
  [2, 0, 0, 1],
  [2, 1, 2, 1],
  [0, 2, 0, 1],
  [0, 0, 1, 0]];
- /*
- Entries = [
- [2, 2, 1, 1],
- [2, 2, 1, 1],
- [2, 2, 2, 1],
- [2, 2, 1, 1]];*/
- /*
- Entries = [
- [2, 0, 0, 1],
- [2, 1, 2, 1],
- [0, 2, 0, 1],
- [0, 0, 1, 0]];*/
 
  
  // ROWS+1 ROWS is START
