@@ -1,6 +1,6 @@
 // Create a record to hold information about each arc
 
-int Side = ...;   // Number of nodes
+int Side = ...;   // Number of rows
 range Rows = 1..Side;
 range SmRows =1..Side-1;
 int BigNumb = Side*Side;
