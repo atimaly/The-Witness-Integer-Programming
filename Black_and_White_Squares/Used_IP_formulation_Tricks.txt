@@ -1,0 +1,3 @@
+1. Point in polygon (left half-line): https://en.wikipedia.org/wiki/Point_in_polygon
+2. Parity check:  https://ocw.mit.edu/courses/sloan-school-of-management/15-053-optimization-methods-in-management-science-spring-2013/lecture-notes/MIT15_053S13_iprefguide.pdf
+3. No cycles: https://faculty.math.illinois.edu/~mlavrov/docs/482-spring-2020/lecture35.pdf
