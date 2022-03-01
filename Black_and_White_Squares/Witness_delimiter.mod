@@ -1,8 +1,3 @@
-/*********************************************
- * OPL 20.1.0.0 Model
- * Author: anarchturandot
- * Creation Date: Feb 26, 2022 at 4:31:21 PM
- *********************************************/
 // Create a record to hold information about each arc
 
 int Side = ...;   // Number of nodes
@@ -36,13 +31,13 @@ dexpr float TotalFlow = sum (a in Arcs) Flow[a];
 minimize TotalFlow;
 
 subject to {
-   // Preserve flows at each node.  Note the use of slicing
-   forall (i in Rows, j in Rows) {
-     ctNodeFlow:
-      sum (<i,j,k,l> in Arcs) Flow[<i,j,k,l>]
-    - sum (<k,l,i,j> in Arcs) Flow[<k,l,i,j>] == 0;
+  	// Preserve flows at each node.  Note the use of slicing
+   	forall (i in Rows, j in Rows) {
+     		ctNodeFlow:
+      		sum (<i,j,k,l> in Arcs) Flow[<i,j,k,l>]
+   		- sum (<k,l,i,j> in Arcs) Flow[<k,l,i,j>] == 0;
    	}    
-    Flow[<1, Exit, 0, 0>] == 1;
+    	Flow[<1, Exit, 0, 0>] == 1;
 	Flow[<Side+1, Side, Side, Side>] == 1;
 		
 	//Separation
