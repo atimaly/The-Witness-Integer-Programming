@@ -53,11 +53,9 @@ subject to {
 	 }
 	 
 	 //No cycle
-	 //Potential[Side][Side] == 0;
 	 forall (a in Arcs) {
 	   	if(a.tonode_x != 0 && a.fromnode_x != Side+1) //Not the Exit or the Entry nodes
 	   		Potential[a.tonode_x][a.tonode_y] >= Potential[a.fromnode_x][a.fromnode_y]+1-BigNumb*(1-Flow[a]);
-	   		//Flow[a]*(Potential[a.tonode_x][a.tonode_y]-Potential[a.fromnode_x][a.fromnode_y]) >= 1;
 	  }
 }
 
